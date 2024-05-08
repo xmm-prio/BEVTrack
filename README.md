@@ -1,5 +1,5 @@
 # BEVTrack
-This repo is the official implementation of ["BEVTrack: A Simple and Strong Baseline for 3D Single Object Tracking in Bird’s-Eye View"](https://arxiv.org/pdf/2309.02185). It currently includes the testing code and models for 3D single object tracking.
+This repo is the official implementation of ["BEVTrack: A Simple and Strong Baseline for 3D Single Object Tracking in Bird's-Eye View"](https://arxiv.org/pdf/2309.02185). It currently includes the testing code and models for 3D single object tracking.
 An open source platform for general 3D single object tracking, based on [OpenMMlab](https://github.com/open-mmlab/mmdetection3d).
 
 ### Features
@@ -14,39 +14,39 @@ An open source platform for general 3D single object tracking, based on [OpenMMl
 
 ## Main Results on SOT Benchmarks with Pretrained Models
 **KITTI**
-|  Category  | Success | Precision |             Config             |                          Checkpoint                          |
-| :--------: | :-----: | :-------: | :----------------------------: | :----------------------------------------------------------: |
-|    Car     |  74.91  |   86.49   | [config](configs/kitti/car.py) | [baidu](https://pan.baidu.com/s/17VDBmVmiPx0X19vYUYkQQw?pwd=1234)/[onedrive](https://1drv.ms/u/s!AlayK3RgAcdLc7kludVmf_G5yZQ?e=GOrbO1) |
-| Pedestrian |  69.50  |   94.34   | [config](configs/kitti/ped.py) | [baidu](https://pan.baidu.com/s/1Fm25OGbs8hAkXjnGYrYBWw?pwd=1234)/[onedrive](https://1drv.ms/u/s!AlayK3RgAcdLddObRj7aj6RnMGs?e=w7OeDK) |
-|    Van     |  66.02  |   77.24   | [config](configs/kitti/van.py) | [baidu](https://pan.baidu.com/s/12H4561UFkmRi6M8urBgtkw?pwd=1234)/[onedrive](https://1drv.ms/u/s!AlayK3RgAcdLdlnFC43htDpFu2A?e=fsSsu0) |
-|  Cyclist   |  76.99  |   94.69   | [config](configs/kitti/cyc.py) | [baidu](https://pan.baidu.com/s/1xRUm8IMJDB4HYcrxpjJuKA?pwd=1234)/[onedrive](https://1drv.ms/u/s!AlayK3RgAcdLdI7BVJU-nruzLl4?e=wCRiQN) |
+| Category | Success | Precision | Config |  Checkpoint |
+| :---: | :---: | :---: | :---: |  :---: |
+| Car | 74.91 | 86.49 | [config](configs/kitti/car.py) | [baidu](https://pan.baidu.com/s/17VDBmVmiPx0X19vYUYkQQw?pwd=1234)/[onedrive](https://1drv.ms/u/s!AlayK3RgAcdLc7kludVmf_G5yZQ?e=GOrbO1) |
+| Pedestrian | 69.50 | 94.34 | [config](configs/kitti/ped.py) | [baidu](https://pan.baidu.com/s/1Fm25OGbs8hAkXjnGYrYBWw?pwd=1234)/[onedrive](https://1drv.ms/u/s!AlayK3RgAcdLddObRj7aj6RnMGs?e=w7OeDK) |
+| Van | 66.02 | 77.24 | [config](configs/kitti/van.py) | [baidu](https://pan.baidu.com/s/12H4561UFkmRi6M8urBgtkw?pwd=1234)/[onedrive](https://1drv.ms/u/s!AlayK3RgAcdLdlnFC43htDpFu2A?e=fsSsu0) |
+| Cyclist | 76.99 | 94.69 | [config](configs/kitti/cyc.py) | [baidu](https://pan.baidu.com/s/1xRUm8IMJDB4HYcrxpjJuKA?pwd=1234)/[onedrive](https://1drv.ms/u/s!AlayK3RgAcdLdI7BVJU-nruzLl4?e=wCRiQN) |
 
 **NuScenes**
-|  Category  | Success | Precision |                Config                 |                          Checkpoint                          |
-| :--------: | :-----: | :-------: | :-----------------------------------: | :----------------------------------------------------------: |
-|    Car     |  64.31  |   71.14   |   [config](configs/nuscenes/car.py)   | [baidu](https://pan.baidu.com/s/1U1QieSe37obO7yDEvIOi3A?pwd=1234)/[onedrive](https://1drv.ms/u/s!AlayK3RgAcdLdwDflTi4b4LoPJc?e=IcQRUh) |
-| Pedestrian |  46.28  |   76.77   |   [config](configs/nuscenes/ped.py)   | [baidu](https://pan.baidu.com/s/1KotqU7c88TENQ-WfMOUR-g?pwd=1234)/[onedrive](https://1drv.ms/u/s!AlayK3RgAcdLeb7wMnZUu-NHO7E?e=VWGM4r) |
-|   Truck    |  66.83  |   67.04   |  [config](configs/nuscenes/truck.py)  | [baidu](https://pan.baidu.com/s/1wL7tzQ4upIMZyoykpPBatQ?pwd=1234)/[onedrive](https://1drv.ms/u/s!AlayK3RgAcdLel0gFqwfpnBJVGw?e=j4Tgtr) |
-|  Trailer   |  74.54  |   71.62   | [config](configs/nuscenes/trailer.py) | [baidu](https://pan.baidu.com/s/1nV3b3HOt7cfekzQdNqT0IQ?pwd=1234)/[onedrive](https://1drv.ms/u/s!AlayK3RgAcdLe0K6EtAii2_2xv4?e=Hd8DAi) |
-|    Bus     |  61.09  |   56.68   |   [config](configs/nuscenes/bus.py)   | [baidu](https://pan.baidu.com/s/127pqZcFAZWm6zLvQoC-mTQ?pwd=1234)/[onedrive](https://1drv.ms/u/s!AlayK3RgAcdLeA7e5PlDmHoGB4w?e=gdeEsZ) |
+| Category | Success | Precision | Config |  Checkpoint |
+| :---: | :---: | :---: | :---: |  :---: |
+| Car | 64.31 | 71.14 | [config](configs/nuscenes/car.py) | [baidu](https://pan.baidu.com/s/1U1QieSe37obO7yDEvIOi3A?pwd=1234)/[onedrive](https://1drv.ms/u/s!AlayK3RgAcdLdwDflTi4b4LoPJc?e=IcQRUh) |
+| Pedestrian | 46.28 | 76.77 | [config](configs/nuscenes/ped.py) | [baidu](https://pan.baidu.com/s/1KotqU7c88TENQ-WfMOUR-g?pwd=1234)/[onedrive](https://1drv.ms/u/s!AlayK3RgAcdLeb7wMnZUu-NHO7E?e=VWGM4r) |
+| Truck | 66.83 | 67.04 | [config](configs/nuscenes/truck.py) | [baidu](https://pan.baidu.com/s/1wL7tzQ4upIMZyoykpPBatQ?pwd=1234)/[onedrive](https://1drv.ms/u/s!AlayK3RgAcdLel0gFqwfpnBJVGw?e=j4Tgtr) |
+| Trailer | 74.54 | 71.62 | [config](configs/nuscenes/trailer.py) | [baidu](https://pan.baidu.com/s/1nV3b3HOt7cfekzQdNqT0IQ?pwd=1234)/[onedrive](https://1drv.ms/u/s!AlayK3RgAcdLe0K6EtAii2_2xv4?e=Hd8DAi) |
+| Bus | 61.09 | 56.68 | [config](configs/nuscenes/bus.py) | [baidu](https://pan.baidu.com/s/127pqZcFAZWm6zLvQoC-mTQ?pwd=1234)/[onedrive](https://1drv.ms/u/s!AlayK3RgAcdLeA7e5PlDmHoGB4w?e=gdeEsZ) |
 
 **Waymo Open Dataset**
-|  Category  | Success | Precision |             Config             |                          Checkpoint                          |
-| :--------: | :-----: | :-------: | :----------------------------: | :----------------------------------------------------------: |
-|  Vehicle   |  70.05  |   80.05   | [config](configs/waymo/veh.py) | [baidu](https://pan.baidu.com/s/1wsbixNNPV4duIDT1iCMISw?pwd=1234)/[onedrive](https://1drv.ms/u/s!AlayK3RgAcdLfc72m5VzQiH978M?e=NW5D2w) |
-| Pedestrian |  45.93  |   72.41   | [config](configs/waymo/ped.py) | [baidu](https://pan.baidu.com/s/1-qmCSzXa3biS1cZKFL5qbQ?pwd=1234)/[onedrive](https://1drv.ms/u/s!AlayK3RgAcdLfOafebf40ovhJaM?e=mJlWYA) |
+| Category | Success | Precision | Config |  Checkpoint |
+| :---: | :---: | :---: | :---: |  :---: |
+| Vehicle | 70.05 | 80.05 | [config](configs/waymo/veh.py) | [baidu](https://pan.baidu.com/s/1wsbixNNPV4duIDT1iCMISw?pwd=1234)/[onedrive](https://1drv.ms/u/s!AlayK3RgAcdLfc72m5VzQiH978M?e=NW5D2w) |
+| Pedestrian | 45.93 | 72.41 | [config](configs/waymo/ped.py) | [baidu](https://pan.baidu.com/s/1-qmCSzXa3biS1cZKFL5qbQ?pwd=1234)/[onedrive](https://1drv.ms/u/s!AlayK3RgAcdLfOafebf40ovhJaM?e=mJlWYA) |
 
 ## Setup
 Here we list the most important part of our dependencies
-| Dependency | Version          |
-| ---------- | ---------------- |
-| python     | 3.9.0            |
-| pytorch    | 2.0.1 (cuda11.8) |
-| mmegine    | 0.7.4            |
-| mmcv       | 2.0.0            |
-| mmdet      | 3.0.0            |
-| mmdet3d    | 1.1.0            |
-| spconv     | 2.3.6 (cuda11.8) |
+|Dependency|Version|
+|---|---|
+|python|3.9.0|
+|pytorch|2.0.1 (cuda11.8)|
+|mmegine|0.7.4|
+|mmcv|2.0.0|
+|mmdet|3.0.0|
+|mmdet3d|1.1.0| 
+|spconv|2.3.6 (cuda11.8)|
 
 ### KITTI dataset
 + Download the data for [velodyne](http://www.cvlibs.net/download.php?file=data_tracking_velodyne.zip), [calib](http://www.cvlibs.net/download.php?file=data_tracking_calib.zip) and [label_02](http://www.cvlibs.net/download.php?file=data_tracking_label_2.zip) from [KITTI Tracking](http://www.cvlibs.net/datasets/kitti/eval_tracking.php).
@@ -95,19 +95,19 @@ Here we list the most important part of our dependencies
 To train a model, you must specify the `.py` config file. The `.py` file contains all the configurations of the dataset and the model. We provide `.py` config files under the [*configs*](./configs) directory. **Note:** Before running the code, you will need to edit the `.py` config file by setting the `path` argument as the correct root of the dataset. (We will release the training code upon paper acceptance.)
 ```bash
 # single-gpu training
-python train.py --config $config_file
+python train.py $config_file
 # multi-gpu training
 ./dist_train.sh $config_file $num_gpus 
 ```
 
 ### Testing
 
-To test a trained model, specify the checkpoint location with `--resume_from` argument and set the `--phase` argument as `test`. **Note:** Before running the code, you will need to edit the `.py` config file by setting the `path` argument as the correct root of the dataset.
+To test a trained model, specify the checkpoint, and the `.py` config file. We provide the trained model in the Baidu and OneDrive Netdisk. The `.py` file contains all the configurations of the dataset and the model. We provide `.py` config files under the [*configs*](./configs) directory. **Note:** Before running the code, you will need to edit the `.py` config file by setting the `path` argument as the correct root of the dataset.
 ```bash
 # single-gpu testing
-python test.py --config $config_file --load_from $checkpoint_file
+python test.py $config_file $checkpoint_file
 # multi-gpu testing
-./dist_test.sh $config_file $num_gpus 
+./dist_test.sh $config_file $checkpoint_file $num_gpus 
 ```
 ## Citing BEVTrack
 ```
