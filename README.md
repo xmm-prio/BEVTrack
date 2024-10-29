@@ -113,7 +113,7 @@ python test.py $config_file $checkpoint_file
 ```
 @article{yang2023bevtrack,
   title={BEVTrack: A Simple and Strong Baseline for 3D Single Object Tracking in Bird's-Eye View},
-  author={Yang, Yuxiang and Deng, Yingqi and Zhang, Jing and Nie, Jiahao and Zha, Zheng-Jun},
+  author={Yang, Yuxiang and Deng, Yingqi and Fan, Jinlong and Zhang, Jing and Zha, Zheng-Jun},
   journal={arXiv e-prints},
   pages={arXiv--2309},
   year={2023}
