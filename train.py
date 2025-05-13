@@ -9,7 +9,7 @@ from mmengine.evaluator import Evaluator
 def parse_args():
     parser = argparse.ArgumentParser(description='Train a 3D detector')
     parser.add_argument('config', help='train config file path')
-    parser.add_argument('load_from', help='train config file path')
+    parser.add_argument('--resume', default=None, help='train config file path')
     parser.add_argument(
         '--launcher',
         choices=['none', 'pytorch', 'slurm', 'mpi'],
@@ -22,7 +22,7 @@ def parse_args():
     return args
 
 if __name__ == '__main__':
-    
+
     args = parse_args()
     cfg = Config.fromfile(args.config)
 
@@ -30,14 +30,18 @@ if __name__ == '__main__':
     evaluator = Evaluator(metric)
 
     runner = Runner(model=cfg.model,
-                    load_from=args.load_from,
+                    resume=args.resume,
+                    visualizer=cfg.visualizer,
                     default_hooks=cfg.default_hooks,
                     env_cfg=cfg.env_cfg,
                     work_dir='./work_dir',
-                    test_dataloader=cfg.test_dataloader,
-                    test_evaluator=evaluator,
-                    test_cfg=cfg.test_cfg,
+                    train_cfg=cfg.train_cfg,
+                    train_dataloader=cfg.train_dataloader,
+                    val_dataloader=cfg.val_dataloader,
+                    val_evaluator=evaluator,
+                    val_cfg=cfg.val_cfg,
+                    optim_wrapper=cfg.optim_wrapper,
                     launcher=args.launcher,
                     cfg=dict())
 
-    runner.test()
+    runner.train()

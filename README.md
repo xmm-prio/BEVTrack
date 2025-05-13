@@ -92,7 +92,7 @@ Here we list the most important part of our dependencies
 
 ## Quick Start
 ### Training
-To train a model, you must specify the `.py` config file. The `.py` file contains all the configurations of the dataset and the model. We provide `.py` config files under the [*configs*](./configs) directory. **Note:** Before running the code, you will need to edit the `.py` config file by setting the `path` argument as the correct root of the dataset. (We will release the training code upon paper acceptance.)
+To train a model, you must specify the `.py` config file. The `.py` file contains all the configurations of the dataset and the model. We provide `.py` config files under the [*configs*](./configs) directory. **Note:** Before running the code, you will need to edit the `.py` config file by setting the `path` argument as the correct root of the dataset.
 ```bash
 # single-gpu training
 python train.py $config_file
@@ -111,12 +111,12 @@ python test.py $config_file $checkpoint_file
 ```
 ## Citing BEVTrack
 ```
-@article{yang2023bevtrack,
+@inproceedings{yang2023bevtrack,
   title={BEVTrack: A Simple and Strong Baseline for 3D Single Object Tracking in Bird's-Eye View},
-  author={Yang, Yuxiang and Deng, Yingqi and Fan, Jinlong and Zhang, Jing and Zha, Zheng-Jun},
-  journal={arXiv e-prints},
-  pages={arXiv--2309},
-  year={2023}
+  author={Yang, Yuxiang and Deng, Yingqi and Pan, Mian and Zha, Zheng-Jun and Zhang, Jing},
+  booktitle={34rd International Joint Conference on Artificial Intelligence, IJCAI 2025},
+  year={2025},
+  organization={International Joint Conferences on Artificial Intelligence}
 }
 ```
 
